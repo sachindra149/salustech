@@ -253,7 +253,6 @@ function topFunction() {
 let _copyright = document.querySelector(".copyright .p-small span");
 _copyright.textContent = new Date().getFullYear();
 
-
 function formSubmit(e) {
     e.preventDefault();
     grecaptcha.enterprise.ready(async () => {
