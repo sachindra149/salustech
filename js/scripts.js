@@ -253,3 +253,16 @@ function topFunction() {
 let _copyright = document.querySelector(".copyright .p-small span");
 _copyright.textContent = new Date().getFullYear();
 
+
+function formSubmit(e) {
+    e.preventDefault();
+    grecaptcha.enterprise.ready(async () => {
+        const token = await grecaptcha.enterprise.execute('6LfWtQQqAAAAAD-CHrmpeRA8ArA9aCiV0e36CXTK', {action: 'LOGIN'});
+    });
+}
+
+let contactFormSubmit = document.querySelector("#contact-form");
+contactFormSubmit.addEventListener("submit", function() {
+    formSubmit();
+});
+  

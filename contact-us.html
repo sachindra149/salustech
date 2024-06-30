@@ -136,7 +136,8 @@
 					</div> <!-- end of col -->
 					<div class="col-lg-6">
 						<!-- Registration Form -->
-						<form action="https://formsubmit.co/cae32ac8e02ac035c84d4896ebbaa580" method="POST">
+						<form action="https://formsubmit.co/cae32ac8e02ac035c84d4896ebbaa580" method="POST" id="contact-form">
+						<!-- <form action="#" method="POST" id="contact-form" name="contact-form"> -->
 							<input type="hidden" name="_subject" value="New Enquiry Received via Contact Us Page of Salus Tech Website">
 							<div class="mb-4 form-floating">
 								<input type="text" name="name" class="form-control" id="floatingInput1"
@@ -154,14 +155,23 @@
 								<label for="floatingInput2">Message</label>
 							</div>
 
-							<input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+							<input type="hidden" name="_next" value="https://saluscybertech-dev.netlify.app/thank-you.html">
 							<div class="mb-4 form-check d-none">
 								<input type="checkbox" class="form-check-input" id="exampleCheck1">
 								<label class="form-check-label" for="exampleCheck1">Sign up for our email list for
 									updates,
 									promotions, and more.</label>
 							</div>
-							<button type="submit" class="form-control-submit-button">Inquire</button>
+							<button class="form-control-submit-button" type="submit">
+							Submit Enquiry
+							</button>
+							<!-- <button class="g-recaptcha form-control-submit-button"
+								data-sitekey="6LfWtQQqAAAAAD-CHrmpeRA8ArA9aCiV0e36CXTK"
+								data-callback="onSubmit"
+								data-action="submit"
+								type="submit">
+							Submit Enquiry
+							</button> -->
 						</form>
 						<!-- end of registrations form -->
 
@@ -347,6 +357,9 @@
 	<script src="js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
 	<script src="js/replaceme.min.js"></script> <!-- ReplaceMe for rotating text -->
 	<script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
+
+	<script src="https://www.google.com/recaptcha/enterprise.js?render=6LfWtQQqAAAAAD-CHrmpeRA8ArA9aCiV0e36CXTK"></script>
+		
 	<script src="js/scripts.js"></script> <!-- Custom scripts -->
 </body>
 
