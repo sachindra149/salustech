@@ -26,7 +26,7 @@
 
 	<!-- Styles -->
 	<link
-		href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap"
+		href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@500&display=swap"
 		rel="stylesheet">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/fontawesome-all.min.css" rel="stylesheet">
@@ -61,6 +61,9 @@
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="./services.html">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./trainings.html">Trainings</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link active" href="#why-us">Contact us</a>
@@ -126,15 +129,15 @@
 
 							<hr class="hr-heading">
 							<br>
-							<a class="btn btn-transparent" href="https://wa.me/971527245162" role="button"
+							<a class="btn btn-transparent p-0" href="https://wa.me/971527245162" role="button"
 								target="_blank"><img alt="Chat on WhatsApp"
-									src="images/WhatsAppButtonGreenLarge.svg" /></a>
+									src="images/WhatsAppButtonGreenLarge.svg" title="Chat with us on WhatsApp" /></a>
 						</div> <!-- end of text-container -->
 					</div> <!-- end of col -->
 					<div class="col-lg-6">
 						<!-- Registration Form -->
-						<form action="https://formsubmit.co/test@saluscybertech.com" method="POST">
-							<input type="hidden" name="_subject" value="New Inquiry Received via Salus Tech Website">
+						<form target="_blank" action="https://formsubmit.co/sachindra149@gmail.com" method="POST">
+							<input type="hidden" name="_subject" value="New Enquiry Received via Contact Us Page of Salus Tech Website">
 							<div class="mb-4 form-floating">
 								<input type="text" name="name" class="form-control" id="floatingInput1"
 									placeholder="Name">
@@ -151,8 +154,8 @@
 								<label for="floatingInput2">Message</label>
 							</div>
 
-
-							<div class="mb-4 form-check">
+							<input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+							<div class="mb-4 form-check d-none">
 								<input type="checkbox" class="form-check-input" id="exampleCheck1">
 								<label class="form-check-label" for="exampleCheck1">Sign up for our email list for
 									updates,
@@ -324,7 +327,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<p class="p-small">Copyright &copy; 2023 Salus Tech - All Rights Reserved.</a></p>
+					<p class="p-small">Copyright &copy; <span>2023</span> Salus Tech - All Rights Reserved.</a></p>
 				</div> <!-- end of col -->
 			</div> <!-- enf of row -->
 		</div> <!-- end of container -->
@@ -334,7 +337,7 @@
 
 	<!-- Back To Top Button -->
 	<button onclick="topFunction()" id="myBtn">
-		<img src="images/up-arrow.png" alt="alternative">
+		<img src="images/up-arrow.png" alt="Go to Top" title="Go To Top" />
 	</button>
 	<!-- end of back to top button -->
 
@@ -344,6 +347,7 @@
 	<script src="js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
 	<script src="js/replaceme.min.js"></script> <!-- ReplaceMe for rotating text -->
 	<script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
+	<script src="https://www.google.com/recaptcha/api.js"></script> <!-- Google Re-captcha -->
 	<script src="js/scripts.js"></script> <!-- Custom scripts -->
 </body>
 

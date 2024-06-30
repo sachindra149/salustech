@@ -247,3 +247,8 @@ function topFunction() {
     document.body.scrollTop = 0; // for Safari
     document.documentElement.scrollTop = 0; // for Chrome, Firefox, IE and Opera
 }
+
+// Copyright Year
+
+let _copyright = document.querySelector(".copyright .p-small span");
+_copyright.textContent = new Date().getFullYear();
