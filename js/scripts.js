@@ -253,8 +253,3 @@ function topFunction() {
 let _copyright = document.querySelector(".copyright .p-small span");
 _copyright.textContent = new Date().getFullYear();
 
-
-// reCAPTCHA 
-function onSubmit(token) {
-    document.getElementById("contact-us-form").submit();
-}
